@@ -145,14 +145,14 @@ use global function createMessageManager to get instance</div>
 
     
 
-    <h4 class="name" id="blockUser"><span class="type-signature"></span>blockUser<span class="signature">(chatroomName, userLabels)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="blockUser"><span class="type-signature"></span>blockUser<span class="signature">(chatroomName, user)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
 
 
 
 <div class="description">
-    Block the user/users from a specific chat room
+    Block the user/users to BLOCKED role from a specific chat room
 </div>
 
 
@@ -211,7 +211,7 @@ use global function createMessageManager to get instance</div>
 
         <tr>
             
-                <td class="name"><code>userLabels</code></td>
+                <td class="name"><code>user</code></td>
             
 
             <td class="type">
@@ -230,7 +230,7 @@ use global function createMessageManager to get instance</div>
 
             
 
-            <td class="description last">a single label or an array of labels</td>
+            <td class="description last">a single user objetc or an array of user objects</td>
         </tr>
 
     
@@ -271,7 +271,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line272">line 272</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line263">line 263</a>
     </li></ul></dd>
     
 
@@ -447,7 +447,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line253">line 253</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line244">line 244</a>
     </li></ul></dd>
     
 
@@ -1355,7 +1355,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line243">line 243</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line234">line 234</a>
     </li></ul></dd>
     
 
@@ -1675,7 +1675,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line206">line 206</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line197">line 197</a>
     </li></ul></dd>
     
 
@@ -1828,7 +1828,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line156">line 156</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line146">line 146</a>
     </li></ul></dd>
     
 
@@ -1932,7 +1932,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line147">line 147</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line137">line 137</a>
     </li></ul></dd>
     
 
@@ -2085,7 +2085,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line262">line 262</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line253">line 253</a>
     </li></ul></dd>
     
 
@@ -2146,6 +2146,7 @@ use global function createMessageManager to get instance</div>
 
 <div class="description">
     Return all messages in a specific chat room
+If there are over 5000 people in the chat room, it responds empty array
 </div>
 
 
@@ -2405,7 +2406,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line188">line 188</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line179">line 179</a>
     </li></ul></dd>
     
 
@@ -2725,7 +2726,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line224">line 224</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line215">line 215</a>
     </li></ul></dd>
     
 
@@ -2878,7 +2879,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line281">line 281</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line282">line 282</a>
     </li></ul></dd>
     
 
@@ -3031,7 +3032,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line290">line 290</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line291">line 291</a>
     </li></ul></dd>
     
 
@@ -3211,7 +3212,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line170">line 170</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line160">line 160</a>
     </li></ul></dd>
     
 
@@ -3492,7 +3493,186 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line234">line 234</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line225">line 225</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    a promise
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="reviveUser"><span class="type-signature"></span>reviveUser<span class="signature">(chatroomName, user)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Revive the user/users to NORMAL role from a specific chat room
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>chatroomName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">chat room name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a single user objetc or an array of user objects</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line273">line 273</a>
     </li></ul></dd>
     
 
@@ -3668,7 +3848,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line85">line 85</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line86">line 86</a>
     </li></ul></dd>
     
 
@@ -3729,6 +3909,7 @@ from function createMessageManager
 
 <div class="description">
     Send message to a specific chat room
+This method can't be call more than once within one second
 </div>
 
 
@@ -3844,7 +4025,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line75">line 75</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line76">line 76</a>
     </li></ul></dd>
     
 
@@ -4021,7 +4202,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line96">line 96</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line97">line 97</a>
     </li></ul></dd>
     
 
@@ -4197,7 +4378,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line106">line 106</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line107">line 107</a>
     </li></ul></dd>
     
 
@@ -4250,14 +4431,14 @@ from function createMessageManager
 
     
 
-    <h4 class="name" id="updateUserRoleByLabel"><span class="type-signature"></span>updateUserRoleByLabel<span class="signature">(chatroomName, label, role)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="updateUserRole"><span class="type-signature"></span>updateUserRole<span class="signature">(chatroomName, user, role)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
 
 
 
 <div class="description">
-    Update the role by label for a specific user
+    Update the role by user object for a specific user
 </div>
 
 
@@ -4316,13 +4497,13 @@ from function createMessageManager
 
         <tr>
             
-                <td class="name"><code>label</code></td>
+                <td class="name"><code>user</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -4332,7 +4513,7 @@ from function createMessageManager
 
             
 
-            <td class="description last">the label of a specific user</td>
+            <td class="description last">the user object of a specific user</td>
         </tr>
 
     
@@ -4396,7 +4577,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line128">line 128</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line118">line 118</a>
     </li></ul></dd>
     
 
@@ -4595,206 +4776,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line139">line 139</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    a promise
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="updateUserRoleByUserId"><span class="type-signature"></span>updateUserRoleByUserId<span class="signature">(chatroomName, userId, role)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-
-    
-
-
-
-<div class="description">
-    Update the role by user id for a specific user
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>chatroomName</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">chat room name</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>userId</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">the user id of a specific user</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>role</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">MODERATOR|NORMAL</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line117">line 117</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line129">line 129</a>
     </li></ul></dd>
     
 
@@ -4864,7 +4846,7 @@ from function createMessageManager
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Tue Feb 21 2017 13:35:18 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu Mar 23 2017 13:33:23 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
