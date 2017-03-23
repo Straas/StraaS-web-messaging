@@ -12,6 +12,9 @@
 * Iframe SDK
 	- Master and MODs highlight
 	- New message notification button
+	- Add `showMessageSource` flag to determine if show message source icon
+		- Default is `false`
+		- Please refer [Iframe SDK](https://github.com/StraaS/StraaS-web-messaging/wiki/StraaS-Web-Messaging#iframe-sdk-getting-started) to learn how to set flag
 ### Bugs
 * Iframe SDK
 	- Fix that can't remove a moderator by cross button
