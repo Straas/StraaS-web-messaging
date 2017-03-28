@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.3-release"></a>
+# Version 1.3 (2017-03-28)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.3/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.3/message-sdk.js`	
+### Bugs
+* Both SDK
+	- Enhance retry connection mechanism
+	- Fix APIs `blockUser` and `updateUserRole` error
+
 <a name="1.2-release"></a>
 # Version 1.2 (2017-03-23)
 
