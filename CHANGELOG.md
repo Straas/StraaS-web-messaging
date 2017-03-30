@@ -1,5 +1,22 @@
 # Change Log
 
+<a name="1.3.1-release"></a>
+# Version 1.3.1 (2017-03-30)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.3.1/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.3.1/message-sdk.js`
+
+### Features
+* Both SDK
+	- Add `straasSupport` flag to disable straas log support, please refer [this](https://github.com/StraaS/StraaS-web-messaging/wiki/StraaS-Web-Messaging#messagemanager-sdk-getting-started)
+
+### Bugs
+* MessageManager SDK
+	- Fix `messages` event does not work bug
+
 <a name="1.3-release"></a>
 # Version 1.3 (2017-03-28)
 
