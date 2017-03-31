@@ -1,5 +1,20 @@
 # Change Log
 
+<a name="1.3.2-release"></a>
+# Version 1.3.2 (2017-03-31)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.3.2/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.3.2/message-sdk.js`
+
+### Features
+* MessageManager SDK
+	- Add [`getSendMessageInterval`]((https://straas.github.io/StraaS-web-messaging/MessageManager.html)) API to learn message cold down time
+* Both SDK
+	- Optimize sdk lib size
+
 <a name="1.3.1-release"></a>
 # Version 1.3.1 (2017-03-30)
 
