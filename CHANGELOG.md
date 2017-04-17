@@ -1,5 +1,23 @@
 # Change Log
 
+<a name="1.4.0-release"></a>
+# Version 1.4.0 (2017-04-17)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.4.0/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.4.0/message-sdk.js`
+
+### Features
+* Iframe SDK
+	- Add welcome new user notification
+	- Add i18n support flag `language`, please refer [this](https://github.com/StraaS/StraaS-web-messaging/wiki/StraaS-Web-Messaging#iframe-sdk-getting-started)
+
+### Bugs
+* MessageManager SDK
+	- Fix `user_remove` event
+
 <a name="1.3.2-release"></a>
 # Version 1.3.2 (2017-03-31)
 
