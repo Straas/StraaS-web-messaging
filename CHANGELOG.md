@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.4.1-release"></a>
+# Version 1.4.1 (2017-04-19)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.4.1/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.4.1/message-sdk.js`
+
+### Bugs
+* MessageManager SDK
+	- Fix `getMessages` API perPage parameter issue
+
 <a name="1.4.0-release"></a>
 # Version 1.4.0 (2017-04-17)
 
