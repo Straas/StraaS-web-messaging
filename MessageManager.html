@@ -271,7 +271,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line282">line 282</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line299">line 299</a>
     </li></ul></dd>
     
 
@@ -447,7 +447,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line263">line 263</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line280">line 280</a>
     </li></ul></dd>
     
 
@@ -1355,7 +1355,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line253">line 253</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line270">line 270</a>
     </li></ul></dd>
     
 
@@ -1675,7 +1675,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line216">line 216</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line233">line 233</a>
     </li></ul></dd>
     
 
@@ -1703,6 +1703,233 @@ use global function createMessageManager to get instance</div>
         
 <div class="param-desc">
     messages - array of messages
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getArchiveMessages"><span class="type-signature"></span>getArchiveMessages<span class="signature">(chatroomName, aid, start, end)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Return archive messages in a specific chat room.
+The number of response messages is uncertain which is 2000 at most.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>chatroomName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">chat room name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aid</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">users need this id to retrieve archive messages</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">start time of archive messages,
+                       unix time in millisecond,
+                       ex: 1406183498018, undefined or null imply no constraint</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">end time of archive messages,
+                     unix time in millisecond,
+                     ex: 1406183498018, undefined or null imply no constraint</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line215">line 215</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    messages - archive messages
 </div>
 
 
@@ -2085,7 +2312,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line272">line 272</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line289">line 289</a>
     </li></ul></dd>
     
 
@@ -2726,7 +2953,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line234">line 234</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line251">line 251</a>
     </li></ul></dd>
     
 
@@ -2879,7 +3106,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line301">line 301</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line318">line 318</a>
     </li></ul></dd>
     
 
@@ -3185,7 +3412,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line310">line 310</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line327">line 327</a>
     </li></ul></dd>
     
 
@@ -3646,7 +3873,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line244">line 244</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line261">line 261</a>
     </li></ul></dd>
     
 
@@ -3825,7 +4052,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line292">line 292</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line309">line 309</a>
     </li></ul></dd>
     
 
@@ -4999,7 +5226,7 @@ This method can't be call more than once within one second
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Mar 31 2017 14:31:00 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon May 15 2017 10:24:59 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
