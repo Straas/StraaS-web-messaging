@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.4.3-release"></a>
+# Version 1.4.3 (2017-05-15)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.4.3/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.4.3/message-sdk.js`
+
+### Features
+
+* Add `getArchivedMessages` API
+
 <a name="1.4.1-release"></a>
 # Version 1.4.1 (2017-04-19)
 
@@ -70,7 +83,7 @@
 * Iframe SDK
 	- `https://mgk.straas.net/sdk/1.3/iframe-sdk.js`
 * MessageManager SDK
-	- `https://mgk.straas.net/sdk/1.3/message-sdk.js`	
+	- `https://mgk.straas.net/sdk/1.3/message-sdk.js`
 ### Bugs
 * Both SDK
 	- Enhance retry connection mechanism
