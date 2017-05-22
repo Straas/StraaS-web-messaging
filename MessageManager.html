@@ -271,7 +271,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line300">line 300</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line312">line 312</a>
     </li></ul></dd>
     
 
@@ -447,7 +447,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line281">line 281</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line293">line 293</a>
     </li></ul></dd>
     
 
@@ -1355,7 +1355,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line271">line 271</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line283">line 283</a>
     </li></ul></dd>
     
 
@@ -1675,7 +1675,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line234">line 234</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line246">line 246</a>
     </li></ul></dd>
     
 
@@ -1735,7 +1735,7 @@ use global function createMessageManager to get instance</div>
 
 
 <div class="description">
-    Return archive messages in a specific time slot.
+    Return archived messages in a specific time slot.
 The limit of of return messages is 2000 messages.
 The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
 </div>
@@ -1812,7 +1812,8 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
 
             
 
-            <td class="description last">users need this id to retrieve archive messages</td>
+            <td class="description last">users need this id to retrieve archived messages,
+                     format is [A-Za-z0-9_-]+</td>
         </tr>
 
     
@@ -1835,7 +1836,7 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
 
             
 
-            <td class="description last">start time of archive messages,
+            <td class="description last">start time of archived messages,
                        unix time in millisecond,
                        ex: 1406183498018, undefined or null imply no constraint</td>
         </tr>
@@ -1860,7 +1861,7 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
 
             
 
-            <td class="description last">end time of archive messages,
+            <td class="description last">end time of archived messages,
                      unix time in millisecond,
                      ex: 1406183498018, undefined or null imply no constraint</td>
         </tr>
@@ -1903,7 +1904,7 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line216">line 216</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line217">line 217</a>
     </li></ul></dd>
     
 
@@ -1930,7 +1931,184 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
 
         
 <div class="param-desc">
-    messages - archive messages
+    messages - archived messages
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getArchivedMessagesMeta"><span class="type-signature"></span>getArchivedMessagesMeta<span class="signature">(chatroomName, aid)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Return meta of archived messages by chatroomName and aid.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>chatroomName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">chat room name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>aid</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">users need this id to retrieve meta of archived messages,
+                     format is [A-Za-z0-9_-]+</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line228">line 228</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    meta - meta of archived messages
 </div>
 
 
@@ -2313,7 +2491,7 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line290">line 290</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line302">line 302</a>
     </li></ul></dd>
     
 
@@ -2954,7 +3132,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line252">line 252</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line264">line 264</a>
     </li></ul></dd>
     
 
@@ -3107,7 +3285,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line319">line 319</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line331">line 331</a>
     </li></ul></dd>
     
 
@@ -3413,7 +3591,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line328">line 328</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line340">line 340</a>
     </li></ul></dd>
     
 
@@ -3874,7 +4052,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line262">line 262</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line274">line 274</a>
     </li></ul></dd>
     
 
@@ -4053,7 +4231,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line310">line 310</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line322">line 322</a>
     </li></ul></dd>
     
 
@@ -5227,7 +5405,7 @@ This method can't be call more than once within one second
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Thu May 18 2017 09:35:50 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon May 22 2017 10:04:23 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
