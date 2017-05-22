@@ -1,13 +1,13 @@
 # Change Log
 
-<a name="1.4.6-release"></a>
-# Version 1.4.6 (2017-05-22)
+<a name="1.4.7-release"></a>
+# Version 1.4.7 (2017-05-22)
 
 ### sdk url
 * Iframe SDK
-	- `https://mgk.straas.net/sdk/1.4.6/iframe-sdk.js`
+	- `https://mgk.straas.net/sdk/1.4.7/iframe-sdk.js`
 * MessageManager SDK
-	- `https://mgk.straas.net/sdk/1.4.6/message-sdk.js`
+	- `https://mgk.straas.net/sdk/1.4.7/message-sdk.js`
 
 ### Features
 
