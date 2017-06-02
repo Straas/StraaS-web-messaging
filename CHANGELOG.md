@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.4.8-release"></a>
+# Version 1.4.8 (2017-06-02)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.4.8/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.4.8/message-sdk.js`
+
+### Features
+* Iframe SDK
+	- Modify chat room shows 40 messages at first time
+
 <a name="1.4.7-release"></a>
 # Version 1.4.7 (2017-05-22)
 
