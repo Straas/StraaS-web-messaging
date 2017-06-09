@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.4.9-release"></a>
+# Version 1.4.9 (2017-06-09)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.4.9/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.4.9/message-sdk.js`
+
+### Features
+* MessageManager SDK
+	- Improve `getArchivedMessages` API
+
 <a name="1.4.8-release"></a>
 # Version 1.4.8 (2017-06-02)
 
