@@ -1,5 +1,22 @@
 # Change Log
 
+<a name="1.5.0-release"></a>
+# Version 1.5.0 (2017-06-22)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.5.0/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.5.0/message-sdk.js`
+
+### Features
+* Iframe SDK
+	- pin/unpin message is supported for master/mod user
+* MessageManager SDK
+	- New API `pinMessage`
+	- New API `unpinMessage`
+	- New API `getPinnedMessage`
+
 <a name="1.4.9-release"></a>
 # Version 1.4.9 (2017-06-09)
 
