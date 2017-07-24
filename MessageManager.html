@@ -217,7 +217,7 @@ use global function createMessageManager to get instance</div>
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 |
 
 <span class="param-type">array</span>
@@ -230,7 +230,10 @@ use global function createMessageManager to get instance</div>
 
             
 
-            <td class="description last">a single user objetc or an array of user objects</td>
+            <td class="description last">a single user object or an array of user objects,
+                       user object should include label (int type).
+                       You can get user object from registerd events which is
+                       started with `user_` or from `getUsers` API</td>
         </tr>
 
     
@@ -271,7 +274,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line312">line 312</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line337">line 337</a>
     </li></ul></dd>
     
 
@@ -447,7 +450,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line293">line 293</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line315">line 315</a>
     </li></ul></dd>
     
 
@@ -1355,7 +1358,7 @@ use global function createMessageManager to get instance</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line283">line 283</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line305">line 305</a>
     </li></ul></dd>
     
 
@@ -2491,7 +2494,7 @@ The recommended setting of is |endTime-startTime| < 10000 (10 seconds)
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line302">line 302</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line324">line 324</a>
     </li></ul></dd>
     
 
@@ -2865,6 +2868,182 @@ If there are over 5000 people in the chat room, it responds empty array
 
     
 
+    <h4 class="name" id="getMeta"><span class="type-signature"></span>getMeta<span class="signature">(chatroomName, keys)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Get meta from a specific chat room
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>chatroomName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">chat room name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keys</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">to get, return all if not specified</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line286">line 286</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    meta - array of metas
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="getPinnedMessage"><span class="type-signature"></span>getPinnedMessage<span class="signature">(chatroomName)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
@@ -2965,7 +3144,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line368">line 368</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line396">line 396</a>
     </li></ul></dd>
     
 
@@ -3438,7 +3617,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line331">line 331</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line359">line 359</a>
     </li></ul></dd>
     
 
@@ -3744,7 +3923,7 @@ If there are over 5000 people in the chat room, it responds empty array
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line340">line 340</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line368">line 368</a>
     </li></ul></dd>
     
 
@@ -4205,7 +4384,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line350">line 350</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line378">line 378</a>
     </li></ul></dd>
     
 
@@ -4381,7 +4560,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line274">line 274</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line296">line 296</a>
     </li></ul></dd>
     
 
@@ -4506,7 +4685,7 @@ from function createMessageManager
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 |
 
 <span class="param-type">array</span>
@@ -4519,7 +4698,10 @@ from function createMessageManager
 
             
 
-            <td class="description last">a single user objetc or an array of user objects</td>
+            <td class="description last">a single user object or an array of user objects,
+                       user object should include label (int type).
+                       You can get user object from registerd events which is
+                       started with `user_` or from `getUsers` API</td>
         </tr>
 
     
@@ -4560,7 +4742,7 @@ from function createMessageManager
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line322">line 322</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line350">line 350</a>
     </li></ul></dd>
     
 
@@ -5143,6 +5325,228 @@ This method can't be call more than once within one second
 
     
 
+    <h4 class="name" id="setMeta"><span class="type-signature"></span>setMeta<span class="signature">(chatroomName, key, value, broadcast)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Set meta in a specific chat room
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>chatroomName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">chat room name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicate the meta key, shouldn't start with _</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicate the meta value</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>broadcast</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">bool</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">indicate meta is broadcast or not</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line276">line 276</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    a promise
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="unpinMessage"><span class="type-signature"></span>unpinMessage<span class="signature">(chatroomName)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
 
     
@@ -5243,7 +5647,7 @@ This method can't be call more than once within one second
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line359">line 359</a>
+        <a href="message-sdk.js.html">message-sdk.js</a>, <a href="message-sdk.js.html#line387">line 387</a>
     </li></ul></dd>
     
 
@@ -5887,7 +6291,7 @@ This method can't be call more than once within one second
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Jul 10 2017 10:58:46 GMT+0800 (CST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Jul 24 2017 16:41:16 GMT+0800 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
