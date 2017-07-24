@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.5.3-release"></a>
+# Version 1.5.3 (2017-07-24)
+
+### Features
+* New API `setMeta`
+* New API `getMeta`
+
 <a name="1.5.1-release"></a>
 # Version 1.5.1 (2017-07-10)
 
