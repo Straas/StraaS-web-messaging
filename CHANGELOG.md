@@ -1,5 +1,11 @@
 # Change Log
 
+<a name="1.5.4-release"></a>
+# Version 1.5.4 (2017-07-28)
+
+### Features
+* Modify log format
+
 <a name="1.5.3-release"></a>
 # Version 1.5.3 (2017-07-24)
 
