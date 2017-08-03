@@ -1,5 +1,11 @@
 # Change Log
 
+<a name="1.5.5-release"></a>
+# Version 1.5.5 (2017-08-03)
+
+### Features
+* Enhance performance
+
 <a name="1.5.4-release"></a>
 # Version 1.5.4 (2017-07-28)
 
