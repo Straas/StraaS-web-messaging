@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.5.6-release"></a>
+# Version 1.5.6 (2017-08-16)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.5.6/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.5.6/message-sdk.js`
+
+### Features
+* Iframe SDK
+	- Add moderator icon and support personal url
+
 <a name="1.5.5-release"></a>
 # Version 1.5.5 (2017-08-03)
 
