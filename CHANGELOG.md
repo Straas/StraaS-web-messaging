@@ -1,5 +1,20 @@
 # Change Log
 
+<a name="1.5.7-release"></a>
+# Version 1.5.7 (2017-08-25)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.5.7/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.5.7/message-sdk.js`
+
+### Bugs
+* Iframe SDK
+	- Bug fix for Safari private mode
+* MessageManager SDK
+	- Bug fix for Safari private mode
+
 <a name="1.5.6-release"></a>
 # Version 1.5.6 (2017-08-16)
 
