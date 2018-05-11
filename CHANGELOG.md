@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.5.8-release"></a>
+# Version 1.5.8 (2018-05-11)
+
+### Feature
+* Deprecate `option.isPersonalChat` for chatroom setting
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.5.8/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.5.8/message-sdk.js`
+
 <a name="1.5.7-release"></a>
 # Version 1.5.7 (2017-08-25)
 
