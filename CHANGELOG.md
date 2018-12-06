@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.6.1-release"></a>
+# Version 1.6.1 (2018-12-06)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.6.1/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.6.1/message-sdk.js`
+
+### Feature
+* Iframe SDK
+	- Auto to use previous nickname for guest
+
 <a name="1.6.0-release"></a>
 # Version 1.6.0 (2018-11-28)
 
