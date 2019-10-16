@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.7.0-release"></a>
+# Version 1.7.0 (2019-10-15)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.0/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.0/message-sdk.js`
+
+### Feature
+* Iframe SDK
+	- Ban the inappropriate words in the chatroom
+
 <a name="1.6.1-release"></a>
 # Version 1.6.1 (2018-12-06)
 
