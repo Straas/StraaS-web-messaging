@@ -1,5 +1,5 @@
 # StraaS Web Messaging
-![](https://event.livehouse.in/straas.io/admintool/images/logo.png)
+<img src="https://straas.io/images/Straas-logo.png" height="100">
 
 Documentation for StraaS Web Messaging.
 
