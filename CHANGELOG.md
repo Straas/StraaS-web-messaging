@@ -1,5 +1,18 @@
 # Change Log
 
+<a name="1.7.1-release"></a>
+# Version 1.7.1 (2020-09-04)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.1/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.1/message-sdk.js`
+
+### Feature
+* Iframe SDK
+	- Add Japanese language
+
 <a name="1.7.0-release"></a>
 # Version 1.7.0 (2019-10-15)
 
