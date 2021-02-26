@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.7.3-release"></a>
+# Version 1.7.3 (2021-02-25)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.3/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.3/message-sdk.js`
+
+### Feature
+- Custom domain function
+
 <a name="1.7.1-release"></a>
 # Version 1.7.1 (2020-09-04)
 
