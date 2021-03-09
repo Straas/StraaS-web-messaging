@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.7.5-release"></a>
+# Version 1.7.5 (2021-03-09)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.5/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.5/message-sdk.js`
+
+### Bug fix
+- Member users shouldn't enter nickname.
+
 <a name="1.7.3-release"></a>
 # Version 1.7.3 (2021-02-25)
 
