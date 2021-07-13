@@ -1,7 +1,7 @@
 # Change Log
 
 <a name="1.7.6-release"></a>
-# Version 1.7.6 (2021-03-09)
+# Version 1.7.6 (2021-07-13)
 
 ### sdk url
 * Iframe SDK
