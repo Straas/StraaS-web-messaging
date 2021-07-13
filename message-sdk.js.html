@@ -228,36 +228,6 @@ class MessageManager extends MessagingClient {
   }
 
   /**
-   * Return archived messages in a specific time slot.
-   * The limit of of return messages is 2000 messages.
-   * The recommended setting of is |endTime-startTime| &lt; 10000 (10 seconds)
-   * @param  {string} chatroomName chat room name
-   * @param  {string} aid users need this id to retrieve archived messages,
-   *                      format is [A-Za-z0-9_-]+
-   * @param  {number} start start time of archived messages,
-   *                        unix time in millisecond,
-   *                        ex: 1406183498018, undefined or null imply no constraint
-   * @param  {number} end end time of archived messages,
-   *                      unix time in millisecond,
-   *                      ex: 1406183498018, undefined or null imply no constraint
-   * @return {object} messages - archived messages
-   */
-  getArchivedMessages(chatroomName, aid, start, end) {
-    return super.getArchivedMessages(chatroomName, aid, start, end)
-  }
-
-  /**
-   * Return meta of archived messages by chatroomName and aid.
-   * @param  {string} chatroomName chat room name
-   * @param  {string} aid users need this id to retrieve meta of archived messages,
-   *                      format is [A-Za-z0-9_-]+
-   * @return {object} meta - meta of archived messages
-   */
-  getArchivedMessagesMeta(chatroomName, aid) {
-    return super.getArchivedMessagesMeta(chatroomName, aid)
-  }
-
-  /**
    * Return aggregate data in a specific chat room
    * @param  {string} chatroomName chat room name
    * @param  {object} options
