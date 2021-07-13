@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.7.6-release"></a>
+# Version 1.7.6 (2021-03-09)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.6/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.6/message-sdk.js`
+
+### Function Removed
+- archived message related api and function removed
+
 <a name="1.7.5-release"></a>
 # Version 1.7.5 (2021-03-09)
 
