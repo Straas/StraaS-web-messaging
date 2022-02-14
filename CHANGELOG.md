@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.7.7-release"></a>
+# Version 1.7.7 (2022-02-14)
+
+### sdk url
+* Iframe SDK
+	- `https://mgk.straas.net/sdk/1.7.7/iframe-sdk.js`
+* MessageManager SDK
+	- `https://mgk.straas.net/sdk/1.7.7/message-sdk.js`
+
+### Feature
+- change MessageManager SDK msg text length limitation from 300 to 500
+
 <a name="1.7.6-release"></a>
 # Version 1.7.6 (2021-07-13)
 
